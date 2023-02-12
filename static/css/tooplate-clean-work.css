@@ -5,7 +5,16 @@ Tooplate 2132 Clean Work
 https://www.tooplate.com/view/2132-clean-work
 
 */
-
+/*---------------------------------------
+ Cores novas        
+ 
+#94FEFF; azul piscina
+#4F92E8; azul mar
+#7663FF; roxo
+#B94FE8; rosa
+#FD54AC; rosa pink
+}
+-----------------------------------------*/
 
 
 /*---------------------------------------
@@ -13,15 +22,15 @@ https://www.tooplate.com/view/2132-clean-work
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #7cb8eb;
-  --secondary-color:              #4f83d1;
+  --primary-color:                #FD54AC;
+  --secondary-color:              #F4B4B7;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #4f83d1;
-  --custom-btn-bg-hover-color:    #7cb8eb;
+  --custom-btn-bg-color:          #F4B4B7;
+  --custom-btn-bg-hover-color:    #FD54AC;
   --dark-color:                   #000000;
   --p-color:                      #717275;
   --border-color:                 #e9eaeb;
-  --link-hover-color:             #4f83d1;
+  --link-hover-color:             #F4B4B7;
 
   --body-font-family:             'Poppins', sans-serif;
 
@@ -178,7 +187,7 @@ strong {
 }
 
 .cd-words-wrapper b {
-  color: #e5e50f;
+  color: #FD54AC;
   display: inline-block;
   position: absolute;
   white-space: nowrap;
@@ -609,8 +618,8 @@ strong {
 }
 
 .custom-btn-bg-white {
-  border-color: var(--white-color);
-  color: var(--white-color);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 
@@ -650,7 +659,7 @@ strong {
 
 .navbar-nav .nav-link {
   display: inline-block;
-  color: var(--white-color);
+  color: var(--primary-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-medium);
   position: relative;
@@ -804,7 +813,7 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   position: relative;
   z-index: 22;
   padding-top: 15px;
@@ -823,7 +832,7 @@ strong {
 }
 
 .site-header .social-icon-link {
-  background: transparent;
+  /*background: transparent;*/
   width: inherit;
   height: inherit;
   line-height: inherit;
@@ -878,7 +887,7 @@ strong {
   BANNER        
 -----------------------------------------*/
 .banner-section {
-  background-image: url('../images/high-angle-woman-cleaning-floors.jpg');
+  background-image: url('../images/petpatas.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1086,7 +1095,7 @@ strong {
 }
 
 .testimonial-section .featured-block {
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
   border-radius: var(--border-radius-medium);
   margin-bottom: 24px;
   padding: 30px;
@@ -1094,7 +1103,7 @@ strong {
 
 .testimonial-section .featured-block h4,
 .testimonial-section .featured-block p {
-  color: var(--white-color);
+/* color: var(--secondary-color); */
 }
 
 
@@ -1333,12 +1342,15 @@ strong {
   color: var(--white-color);
 }
 
+.primary-color{
+color: var(--primary-color)!important;
+}
 
 /*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   padding-top: 50px;
 }
 
@@ -1362,7 +1374,7 @@ strong {
 
 .site-footer-title,
 .site-footer-link {
-  color: var(--white-color);
+  color: var(--primary-color);
 }
 
 .copyright-text {
@@ -1404,7 +1416,7 @@ strong {
 
 .footer-menu-link {
   font-size: var(--p-font-size);
-  color: var(--white-color);
+  color: var(--primary-color);
   display: inline-block;
   vertical-align: middle;
   margin-right: 20px;
@@ -1434,8 +1446,8 @@ strong {
   display: block;
   margin-right: 10px;
   text-align: center;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   line-height: 36px;
 }
 
@@ -1550,7 +1562,7 @@ strong {
 
   .navbar-expand-lg .navbar-nav .nav-link.custom-btn {
     background-color: var(--custom-btn-bg-color);
-    color: var(--white-color);
+    color: var(--primary-color);
     margin-left: 0;
   }
 

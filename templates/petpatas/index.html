@@ -1,125 +1,16 @@
+{% extends 'petpatas/base.html' %}
 {% load static %}
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <meta name="description" content="">
-        <meta name="author" content="">
-
-        <title>Clean Work HTML CSS Template</title>
-
-        <!-- CSS FILES -->        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-
-        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-
-        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
-
-        <link href="{% static 'css/tooplate-clean-work.css' %}" rel="stylesheet">
-
-<!--
-
-Tooplate 2132 Clean Work
-
-https://www.tooplate.com/view/2132-clean-work
-
-Free Bootstrap 5 HTML Template
-
--->
-    </head>
-    
-    <body>
-
-        <header class="site-header">
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="col-lg-12 col-12 d-flex flex-wrap">
-                        <p class="d-flex me-4 mb-0">
-                            <i class="bi-house-fill me-2"></i>
-                            One-Stop Cleaning Service
-                        </p>
-
-                        <p class="d-flex d-lg-block d-md-block d-none me-4 mb-0">
-                            <i class="bi-clock-fill me-2"></i>
-                            <strong class="me-2">Mon - Fri</strong> 8:00 AM - 5:30 PM
-                        </p>
-
-                        <p class="site-header-icon-wrap text-white d-flex mb-0 ms-auto">
-                            <i class="site-header-icon bi-whatsapp me-2"></i>
-
-                            <a href="tel: 110-220-9800" class="text-white">
-                                110 220 9800
-                            </a>
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </header>
-
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="{% static 'images/bubbles.png' %}" class="logo img-fluid" alt="">
-
-                    <span class="ms-2">PetPatas</span>
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="services.html">Our Services</a></li>
-
-                                <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-
-                                <li><a class="dropdown-item" href="page-404.html">Page 404</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-
-                        <li class="nav-item ms-3">
-                            <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="#">Get started</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
+{% block content %}
+       
         <main>
-
             <section class="hero-section hero-section-full-height d-flex justify-content-center align-items-center">
                 <div class="section-overlay"></div>
 
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-7 col-12 text-center mx-auto">
-                            <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
+                        <div class="col-lg-7 col-12 text-pink mx-auto">
+                            <h1 class="cd-headline rotate-1 text-pink mb-4 pb-2">
                                 <span>Seu pet &nbsp &nbsp </span>
                                 <span class="cd-words-wrapper">
                                     <b class="is-visible"> Limpo</b>
@@ -129,7 +20,7 @@ Free Bootstrap 5 HTML Template
                             </h1>
 
                             <a class="custom-btn btn button button--atlas smoothscroll me-3" href="#intro-section">
-                                <span>Introduction</span>
+                                <span>Introdução</span>
 
                                 <div class="marquee" aria-hidden="true">
                                     <div class="marquee__inner">
@@ -142,7 +33,7 @@ Free Bootstrap 5 HTML Template
                             </a>
 
                             <a class="custom-btn custom-border-btn custom-btn-bg-white btn button button--pan smoothscroll" href="#services-section">
-                                <span>Explore Services</span>
+                                <span>Veja nossos serviços</span>
                             </a>
                         </div>
 
@@ -158,23 +49,22 @@ Free Bootstrap 5 HTML Template
                     <div class="row justify-content-lg-center align-items-center">
 
                         <div class="col-lg-6 col-12">
-                            <h2 class="mb-4">Seu companheiro adoro brincar na lama? </h2>
+                            <h2 class="mb-4">Seu companheiro adora brincar na lama? </h2>
 
                             <p> <!-- <a href="#">Clean Work</a> --> Os animais tendem a adorar brincar brincar no quintal e rolar na lama, isso é um habito comum e relativamente saudavel, porém você não vai querer seu pet transformando sua casa em um lamassal... né ?
-                            <p><strong>Relaxa!</strong> nós te ajudamos com isso! Nossa linha de produtos conta com os melhores shampoos e condicionaroes para remover qualquer sujeira, mal cheiro e pulgas!</p>
+                            <p><strong>Relaxa!</strong> nós te ajudamos com isso! Nossa linha de produtos conta com os melhores shampoos e condicionaroes para remover qualquer sujeira, mal cheiro e pulgas do seu amigo de quatro patas!</p>
                         </div>
 
                         <div class="col-lg-6 col-12 custom-block-wrap">
-                            <img src="{% static 'images//dirtydog.png'' %}" class="img-fluid">
+                            <img src="{% static 'images/dirtydog.png' %}" class="img-fluid">
 
                             <div class="custom-block d-flex flex-column">
-                                <h6 class="text-white mb-3">Nos contate! <br> Please call us:</h6>
+                                <h6 class="text-white mb-3">Nos contate pelo<br> WhatsApp: </h6>
 
                                 <p class="d-flex mb-0">
-                                    <i class="bi-telephone-fill custom-icon me-2"></i>
-
-                                    <a href="tel: 110-220-9800">
-                                        110-220-9800
+                                    <i class="text-white bi-whatsapp me-2"></i>                                  
+                                    <a href="https://api.whatsapp.com/send/?phone=13991467846&text=Olá+Gostaria+de+saber+sobre+os+preços&type=phone_number&app_absent=0" target="_blank">
+                                        (13) 99146-7846
                                     </a>
                                 </p>
                             </div>
@@ -185,12 +75,12 @@ Free Bootstrap 5 HTML Template
             </section>
 
 
-            <section class="services-section section-padding section-bg" id="services-section">                
+            <section id="serviços" class="services-section section-padding section-bg" id="services-section">                
                 <div class="container">
                     <div class="row">
 
                         <div class="col-lg-12 col-12">
-                            <h2 class="mb-4">Our best offers</h2>
+                            <h2 class="mb-4">Nossos serviços</h2>
                         </div>
 
                         <div class="col-lg-6 col-12">
@@ -199,20 +89,21 @@ Free Bootstrap 5 HTML Template
                                     <div class="col-lg-5 col-md-5 col-12">
                                         <div class="services-image-wrap">
                                             <a href="services-detail.html">
-                                                <img src="{% static 'images/services/people-taking-care-office-cleaning.jpg' %}" class="services-image img-fluid" alt="">
-                                                <img src="{% static 'images/services/person-taking-care-office.jpg' %}" class="services-image services-image-hover img-fluid" alt="">
+                                                <img src="{% static 'images/services/tosacompleta1.png' %}" class="services-image img-fluid" alt="">
+                                                <img src="{% static 'images/services/tosacompleta2.png' %}" class="services-image services-image-hover img-fluid" alt="">
 
                                                 <div class="services-icon-wrap">
                                                     <div class="d-flex justify-content-between align-items-center">
                                                         <p class="text-white mb-0">
                                                             <i class="bi-cash me-2"></i>
-                                                            $820
+                                                            R$65 ~ 90
                                                         </p>
 
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-clock-fill me-2"></i>
-                                                            5 hrs
-                                                        </p>
+                                                        <!--  Icone de relogio para cards <p class="text-white mb-0">
+                                                                <i class="bi-clock-fill me-2"></i>
+                                                                 5 hrs
+                                                                 </p>
+                                                        -->
                                                     </div>                                                    
                                                 </div>
                                             </a>
@@ -222,21 +113,22 @@ Free Bootstrap 5 HTML Template
                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
                                         <div class="services-info mt-4 mt-lg-0 mt-md-0">
                                             <h4 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Office Cleaning</a>
+                                                <a class="services-title-link">Tosa completa</a>
                                             </h4>
 
-                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+                                            <p>Tosa completa com banho, corte de unhas, perfume e banda/pedinhas</p>
 
                                             <div class="d-flex flex-wrap align-items-center">
                                                 <div class="reviews-icons">
                                                     <i class="bi-star-fill"></i>
                                                     <i class="bi-star-fill"></i>
                                                     <i class="bi-star-fill"></i>
-                                                    <i class="bi-star"></i>
-                                                    <i class="bi-star"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+
                                                 </div>
 
-                                                <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                               <!-- <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
                                                     <span>Learn More</span>
 
                                                     <div class="marquee" aria-hidden="true">
@@ -247,7 +139,7 @@ Free Bootstrap 5 HTML Template
                                                             <span>Learn More</span>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </a> -->
                                             </div>
                                         </div>
                                     </div>
@@ -261,19 +153,57 @@ Free Bootstrap 5 HTML Template
                                     <div class="col-lg-5 col-md-5 col-12">
                                         <div class="services-image-wrap">
                                             <a href="services-detail.html">
-                                                <img src="images/services/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg" class="services-image img-fluid" alt="">
-                                                <img src="images/services/woman-holding-rag-detergent-cleaning-cooker.jpg" class="services-image services-image-hover img-fluid" alt="">
+                                                <img src="{% static 'images/services/patatosaigienica.png' %}" class="services-image img-fluid" alt="">
+                                                <img src="{% static 'images/services/patatosaigienica1.png' %}" class="services-image services-image-hover img-fluid" alt="">
+                                               
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            R$40 ~ 60
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="services-detail.html">Banho e Tosa Higiênica</a>
+                                            </h4>
+
+                                            <p>Banho com corte de unhas, tosa higienica e limpeza de ouvidos</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="services-detail.html">
+                                                <img src="{% static 'images/services/depois1.jpg' %}" class="services-image img-fluid" alt="">
+                                                <img src="{% static 'images/services/depois2.jpg' %}" class="services-image services-image-hover img-fluid" alt="">
 
                                                 <div class="services-icon-wrap">
                                                     <div class="d-flex justify-content-between align-items-center">
                                                         <p class="text-white mb-0">
                                                             <i class="bi-cash me-2"></i>
-                                                            $640
-                                                        </p>
-
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-clock-fill me-2"></i>
-                                                            4 hrs
+                                                            R$40 ~ 60
                                                         </p>
                                                     </div>                                                    
                                                 </div>
@@ -284,10 +214,10 @@ Free Bootstrap 5 HTML Template
                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
                                         <div class="services-info mt-4 mt-lg-0 mt-md-0">
                                             <h4 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Kitchen Cleaning</a>
+                                                <a class="services-title-link" href="services-detail.html">Banho</a>
                                             </h4>
 
-                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+                                            <p>Banho com shampoo antipulgas, condicionador e perfume</p>
 
                                             <div class="d-flex flex-wrap align-items-center">
                                                 <div class="reviews-icons">
@@ -298,17 +228,6 @@ Free Bootstrap 5 HTML Template
                                                     <i class="bi-star-fill"></i>
                                                 </div>
 
-                                                <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
-                                                    <span>Learn More</span>
-
-                                                    <div class="marquee" aria-hidden="true">
-                                                        <div class="marquee__inner">
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                        </div>
-                                                    </div>
                                                 </a>
                                             </div>
                                         </div>
@@ -323,19 +242,14 @@ Free Bootstrap 5 HTML Template
                                     <div class="col-lg-5 col-md-5 col-12">
                                         <div class="services-image-wrap">
                                             <a href="services-detail.html">
-                                                <img src="images/services/man-polishing-car-inside-car-service.jpg" class="services-image img-fluid" alt="">
-                                                <img src="images/services/man-polishing-car-inside.jpg" class="services-image services-image-hover img-fluid" alt="">
+                                                <img src="{% static 'images/services/corteunha1.jpg' %}" class="services-image img-fluid" alt="">
+                                                <img src="{% static 'images/services/corteunha2.jpg' %}" class="services-image services-image-hover img-fluid" alt="">
 
                                                 <div class="services-icon-wrap">
                                                     <div class="d-flex justify-content-between align-items-center">
                                                         <p class="text-white mb-0">
                                                             <i class="bi-cash me-2"></i>
-                                                            $240
-                                                        </p>
-
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-clock-fill me-2"></i>
-                                                            2 hrs
+                                                            R$15
                                                         </p>
                                                     </div>                                                    
                                                 </div>
@@ -346,72 +260,10 @@ Free Bootstrap 5 HTML Template
                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
                                         <div class="services-info mt-4 mt-lg-0 mt-md-0">
                                             <h4 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Car Washing</a>
+                                                <a class="services-title-link" href="services-detail.html">Corte de unhas</a>
                                             </h4>
 
-                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
-
-                                            <div class="d-flex flex-wrap align-items-center">
-                                                <div class="reviews-icons">
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                </div>
-
-                                                <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
-                                                    <span>Learn More</span>
-
-                                                    <div class="marquee" aria-hidden="true">
-                                                        <div class="marquee__inner">
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="services-thumb mb-lg-0">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5 col-12">
-                                        <div class="services-image-wrap">
-                                            <a href="services-detail.html">
-                                                <img src="images/services/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg" class="services-image img-fluid" alt="">
-                                                <img src="images/services/close-up-mop-cleaning-industrial-plant-floor.jpg" class="services-image services-image-hover img-fluid" alt="">
-
-                                                <div class="services-icon-wrap">
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-cash me-2"></i>
-                                                            $6,800
-                                                        </p>
-
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-clock-fill me-2"></i>
-                                                            30 hrs
-                                                        </p>
-                                                    </div>                                                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
-                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
-                                            <h4 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Factory Cleaning</a>
-                                            </h4>
-
-                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+                                            <p>Corte de unha cuidadoso para seu cão ou gato.</p>
 
                                             <div class="d-flex flex-wrap align-items-center">
                                                 <div class="reviews-icons">
@@ -421,19 +273,6 @@ Free Bootstrap 5 HTML Template
                                                     <i class="bi-star-fill"></i>
                                                     <i class="bi-star"></i>
                                                 </div>
-
-                                                <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
-                                                    <span>Learn More</span>
-
-                                                    <div class="marquee" aria-hidden="true">
-                                                        <div class="marquee__inner">
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -453,7 +292,7 @@ Free Bootstrap 5 HTML Template
                     <div class="row">
 
                         <div class="col-lg-12 col-12 text-center">
-                            <h2 class="text-white mb-4">Happy Customers</h2>
+                            <h2 class="text-white mb-4">FeedBack de clientes</h2>
                         </div>
 
                         <div class="col-lg-4 col-12">
@@ -461,7 +300,7 @@ Free Bootstrap 5 HTML Template
                                 <div class="d-flex align-items-center mb-3">
                                     <img src="{% static 'images/avatar/happy-customer-01.jpg' %}" class="avatar-image img-fluid">
 
-                                    <div class="ms-3">
+                                    <div class="ms-3" >
                                         <h4 class="mb-0">Marie</h4>
 
                                         <div class="reviews-icons mb-1">
@@ -479,7 +318,7 @@ Free Bootstrap 5 HTML Template
 
                             <div class="featured-block mb-lg-0">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img src="images/avatar/happy-customer-02.jpg" class="avatar-image img-fluid">
+                                    <img src="{% static 'images/avatar/happy-customer-02.jpg' %}" class="avatar-image img-fluid">
 
                                     <div class="ms-3">
                                         <h4 class="mb-0">Nana</h4>
@@ -501,7 +340,7 @@ Free Bootstrap 5 HTML Template
                         <div class="col-lg-4 col-12">
                             <div class="featured-block">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img src="images/avatar/happy-customer-03.jpg" class="avatar-image img-fluid">
+                                    <img src="{% static 'images/avatar/happy-customer-03.jpg' %}" class="avatar-image img-fluid">
 
                                     <div class="ms-3">
                                         <h4 class="mb-0">Elon</h4>
@@ -521,7 +360,7 @@ Free Bootstrap 5 HTML Template
 
                             <div class="featured-block mb-lg-0">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img src="images/avatar/happy-customer-04.jpg" class="avatar-image img-fluid">
+                                    <img src="{% static 'images/avatar/happy-customer-04.jpg' %}" class="avatar-image img-fluid">
 
                                     <div class="ms-3">
                                         <h4 class="mb-0">Josh</h4>
@@ -543,7 +382,7 @@ Free Bootstrap 5 HTML Template
                         <div class="col-lg-4 col-12">
                             <div class="featured-block">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img src="images/avatar/happy-customer-05.jpg" class="avatar-image img-fluid">
+                                    <img src="{% static 'images/avatar/happy-customer-05.jpg' %}" class="avatar-image img-fluid">
 
                                     <div class="ms-3">
                                         <h4 class="mb-0">Katie</h4>
@@ -563,7 +402,7 @@ Free Bootstrap 5 HTML Template
 
                             <div class="featured-block mb-lg-0">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img src="images/avatar/happy-customer-06.jpg" class="avatar-image img-fluid">
+                                    <img src="{% static 'images/avatar/happy-customer-06.jpg' %}" class="avatar-image img-fluid">
 
                                     <div class="ms-3">
                                         <h4 class="mb-0">Shai</h4>
@@ -586,194 +425,4 @@ Free Bootstrap 5 HTML Template
                 </div>
             </section>
 
-
-            <section class="partners-section">
-                <div class="container">
-                    <div class="row justify-content-center align-items-center">
-
-                        <div class="col-lg-12 col-12">
-                            <h4 class="partners-section-title bg-white shadow-lg">Trusted by companies</h4>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <img src="images/partners/toprak-leasing.svg class="partners-image img-fluid">
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <img src="images/partners/glorix.svg class="partners-image img-fluid">
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <img src="images/partners/woocommerce.svg class="partners-image img-fluid">
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <img src="images/partners/rolf-leasing.svg class="partners-image img-fluid">
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <img src="images/partners/unilabs.svg" class="partners-image img-fluid">
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-        </main>
-
-
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12 d-flex align-items-center mb-4 pb-2">
-                        <div>
-                            <img src="images/bubbles.png" class="logo img-fluid" alt="">
-                        </div>
-
-                        <ul class="footer-menu d-flex flex-wrap ms-5">
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">About Us</a></li>
-
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Blog</a></li>
-
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Reviews</a></li>
-
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-                        <h5 class="site-footer-title mb-3">Our Services</h5>
-
-                        <ul class="footer-menu">
-                            <li class="footer-menu-item">
-                                <a href="#" class="footer-menu-link">
-                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    House Cleaning
-                                </a>
-                            </li>
-
-                            <li class="footer-menu-item">
-                                <a href="#" class="footer-menu-link">
-                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Car Washing
-                                </a>
-                            </li>
-
-                            <li class="footer-menu-item">
-                                <a href="#" class="footer-menu-link">
-                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Laundry
-                                </a>
-                            </li>
-
-                            <li class="footer-menu-item">
-                                <a href="#" class="footer-menu-link">
-                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Office Cleaning
-                                </a>
-                            </li>
-
-                            <li class="footer-menu-item">
-                                <a href="#" class="footer-menu-link">
-                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Toilet Cleaning
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
-                        <h5 class="site-footer-title mb-3">Office</h5>
-
-                        <p class="text-white d-flex mt-3 mb-2">
-                            <i class="bi-geo-alt-fill me-2"></i>
-                            Akershusstranda 20, 0150 Oslo, Norway
-                        </p>
-
-                        <p class="text-white d-flex mb-2">
-                            <i class="bi-telephone-fill me-2"></i>
-
-                            <a href="tel: 110-220-9800" class="site-footer-link">
-                                110-220-9800
-                            </a>
-                        </p>
-
-                        <p class="text-white d-flex">
-                            <i class="bi-envelope-fill me-2"></i>
-
-                            <a href="mailto:info@company.com" class="site-footer-link">
-                                info@company.com
-                            </a>
-                        </p>
-
-                        <ul class="social-icon mt-4">
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link button button--skoll">
-                                    <span></span>
-                                    <span class="bi-twitter"></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link button button--skoll">
-                                    <span></span>
-                                    <span class="bi-facebook"></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link button button--skoll">
-                                    <span></span>
-                                    <span class="bi-instagram"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-6 mt-3 mt-lg-0 mt-md-0">
-                        <div class="featured-block">
-                            <h5 class="text-white mb-3">Service Hours</h5>
-
-                            <strong class="d-block text-white mb-1">Mon - Fri</strong>
-
-                            <p class="text-white mb-3">8:00 AM - 5:30 PM</p>
-
-                            <strong class="d-block text-white mb-1">Sat</strong>
-
-                            <p class="text-white mb-0">6:00 AM - 2:30 PM</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="site-footer-bottom">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12">
-                            <p class="copyright-text mb-0">Copyright © 2036 Clean Work Co., Ltd.</p>
-                        </div>
-                        
-                        <div class="col-lg-6 col-12 text-end">
-                            <p class="copyright-text mb-0">
-                            // Designed by <a href="https://www.tooplate.com" target="_parent">Tooplate</a> //</p>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- JAVASCRIPT FILES -->
-        <script src="{% static 'js/jquery.min.js' %}"></script>
-        <script src="{% static 'js/bootstrap.min.js' %}"></script>
-        <script src="{% static 'js/jquery.backstretch.min.js' %}"></script>
-        <script src="{% static 'js/counter.js' %}"></script>
-        <script src="{% static 'js/countdown.js' %}"></script>
-        <script src="{% static 'js/init.js' %}"></script>
-        <script src="{% static 'js/modernizr.js' %}"></script>
-        <script src="{% static 'js/animated-headline.js' %}"></script>
-        <script src="{% static 'js/custom.js' %}"></script>
-
-    </body>
-</html>
+{% endblock %}
