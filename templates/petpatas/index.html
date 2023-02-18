@@ -9,7 +9,7 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-7 col-12 text-pink mx-auto">
+                        <div class="col-lg-7 col-12 mx-auto">
                             <h1 class="cd-headline rotate-1 text-pink mb-4 pb-2">
                                 <span>Seu pet &nbsp &nbsp </span>
                                 <span class="cd-words-wrapper">
@@ -75,13 +75,15 @@
             </section>
 
 
-            <section id="serviços" class="services-section section-padding section-bg" id="services-section">                
+            <section class="services-section section-padding section-bg" id="services-section">                
                 <div class="container">
                     <div class="row">
 
                         <div class="col-lg-12 col-12">
                             <h2 class="mb-4">Nossos serviços</h2>
                         </div>
+                        {% if cards %}
+                        {% for servico in cards %}
 
                         <div class="col-lg-6 col-12">
                             <div class="services-thumb">
@@ -89,121 +91,14 @@
                                     <div class="col-lg-5 col-md-5 col-12">
                                         <div class="services-image-wrap">
                                             <a href="services-detail.html">
-                                                <img src="{% static 'images/services/tosacompleta1.png' %}" class="services-image img-fluid" alt="">
-                                                <img src="{% static 'images/services/tosacompleta2.png' %}" class="services-image services-image-hover img-fluid" alt="">
+                                                <img src="media/{{servico.foto1}}" class="services-image img-fluid" alt="">
+                                                <img src="media/{{servico.foto2}}" class="services-image services-image-hover img-fluid" alt="">
 
                                                 <div class="services-icon-wrap">
                                                     <div class="d-flex justify-content-between align-items-center">
                                                         <p class="text-white mb-0">
                                                             <i class="bi-cash me-2"></i>
-                                                            R$65 ~ 90
-                                                        </p>
-
-                                                        <!--  Icone de relogio para cards <p class="text-white mb-0">
-                                                                <i class="bi-clock-fill me-2"></i>
-                                                                 5 hrs
-                                                                 </p>
-                                                        -->
-                                                    </div>                                                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
-                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
-                                            <h4 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link">Tosa completa</a>
-                                            </h4>
-
-                                            <p>Tosa completa com banho, corte de unhas, perfume e banda/pedinhas</p>
-
-                                            <div class="d-flex flex-wrap align-items-center">
-                                                <div class="reviews-icons">
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-
-                                                </div>
-
-                                               <!-- <a href="services-detail.html" class="custom-btn btn button button--atlas mt-2 ms-auto">
-                                                    <span>Learn More</span>
-
-                                                    <div class="marquee" aria-hidden="true">
-                                                        <div class="marquee__inner">
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                        </div>
-                                                    </div>
-                                                </a> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="services-thumb">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5 col-12">
-                                        <div class="services-image-wrap">
-                                            <a href="services-detail.html">
-                                                <img src="{% static 'images/services/patatosaigienica.png' %}" class="services-image img-fluid" alt="">
-                                                <img src="{% static 'images/services/patatosaigienica1.png' %}" class="services-image services-image-hover img-fluid" alt="">
-                                               
-                                                <div class="services-icon-wrap">
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-cash me-2"></i>
-                                                            R$40 ~ 60
-                                                    </div>                                                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
-                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
-                                            <h4 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Banho e Tosa Higiênica</a>
-                                            </h4>
-
-                                            <p>Banho com corte de unhas, tosa higienica e limpeza de ouvidos</p>
-
-                                            <div class="d-flex flex-wrap align-items-center">
-                                                <div class="reviews-icons">
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="services-thumb mb-lg-0">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5 col-12">
-                                        <div class="services-image-wrap">
-                                            <a href="services-detail.html">
-                                                <img src="{% static 'images/services/depois1.jpg' %}" class="services-image img-fluid" alt="">
-                                                <img src="{% static 'images/services/depois2.jpg' %}" class="services-image services-image-hover img-fluid" alt="">
-
-                                                <div class="services-icon-wrap">
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-cash me-2"></i>
-                                                            R$40 ~ 60
+                                                            {{ servico.valor }}
                                                         </p>
                                                     </div>                                                    
                                                 </div>
@@ -214,76 +109,46 @@
                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
                                         <div class="services-info mt-4 mt-lg-0 mt-md-0">
                                             <h4 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Banho</a>
+                                                <a class="services-title-link" href="services-detail.html">{{servico.nome}}</a>
                                             </h4>
 
-                                            <p>Banho com shampoo antipulgas, condicionador e perfume</p>
+                                            <p>{{servico.descricao}}</p>
 
                                             <div class="d-flex flex-wrap align-items-center">
                                                 <div class="reviews-icons">
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                </div>
-
-                                                </a>
+                                                    {% if 1 <= servico.avaliacao %}
+                                                        <i class="bi-star-fill"></i>
+                                                            {% if 2 <= servico.avaliacao %}
+                                                                <i class="bi-star-fill"></i>
+                                                                    {% if 3 <= servico.avaliacao %}
+                                                                        <i class="bi-star-fill"></i>
+                                                                        {% if 4 <= servico.avaliacao %}
+                                                                            <i class="bi-star-fill"></i>
+                                                                                {% if 5 <= servico.avaliacao %}
+                                                                                    <i class="bi-star-fill"></i>
+                                                                                {% else %}
+                                                                                {% endif %}
+                                                                        {% else %}
+                                                                        {% endif %}
+                                                                    {% else %}
+                                                                    {% endif %}
+                                                            {% else %}                                                                    
+                                                            {% endif %}
+                                                    {% else %}                                                                    
+                                                    {% endif %}
+                                                </div>               
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="services-thumb mb-lg-0">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5 col-12">
-                                        <div class="services-image-wrap">
-                                            <a href="services-detail.html">
-                                                <img src="{% static 'images/services/corteunha1.jpg' %}" class="services-image img-fluid" alt="">
-                                                <img src="{% static 'images/services/corteunha2.jpg' %}" class="services-image services-image-hover img-fluid" alt="">
-
-                                                <div class="services-icon-wrap">
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <p class="text-white mb-0">
-                                                            <i class="bi-cash me-2"></i>
-                                                            R$15
-                                                        </p>
-                                                    </div>                                                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
-                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
-                                            <h4 class="services-title mb-1 mb-lg-2">
-                                                <a class="services-title-link" href="services-detail.html">Corte de unhas</a>
-                                            </h4>
-
-                                            <p>Corte de unha cuidadoso para seu cão ou gato.</p>
-
-                                            <div class="d-flex flex-wrap align-items-center">
-                                                <div class="reviews-icons">
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star-fill"></i>
-                                                    <i class="bi-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        {% endfor %} 
+                        {% else %} 
+                        {% endif %} 
                     </div>
                 </div>
             </section>
-
 
             <section class="testimonial-section section-padding section-bg">
                 <div class="section-overlay"></div>
@@ -420,8 +285,7 @@
                                 <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                             </div>
                         </div>
-
-                    </div>
+                       
                 </div>
             </section>
 

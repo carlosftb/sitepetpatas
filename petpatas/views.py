@@ -1,9 +1,12 @@
 from django.shortcuts import render
+from petpatas.models import Servicos
+
+
 
 
 def index(request):
-    return render(request, "petpatas/index.html")
-
+    servicos = Servicos.objects.order_by("nome").filter(ativo=True)
+    return render(request, 'petpatas/index.html', {"cards": servicos})
 def service(request):
     return render(request, "petpatas/services.html")
 
@@ -12,3 +15,8 @@ def about(request):
 
 def findus(request):
     return render(request, "petpatas/findus.py")
+
+def login(request):
+    return render(request, "petpatas/login.html")
+
+
