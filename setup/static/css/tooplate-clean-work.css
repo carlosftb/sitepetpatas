@@ -1517,6 +1517,17 @@ color: var(--primary-color)!important;
   transform: translate3d(0,100%,0);
 }
 
+.marker {
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/marcador.png');
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+}
+
 
 /*---------------------------------------
   RESPONSIVE STYLES               

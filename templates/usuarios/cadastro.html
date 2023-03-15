@@ -2,18 +2,19 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<title>Petpatas Login</title>
+	<title>Petpatas Cadastro</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
- 
+
 	<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
- 
+
 	<link rel="stylesheet" type="text/css" href="{% static 'fonts/iconic/css/material-design-iconic-font.min.css' %}">
- 
+
 	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}">
- 
+
 	<link rel="stylesheet" type="text/css" href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}">
 
 	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animsition/css/animsition.min.css' %}">
@@ -26,70 +27,77 @@
 
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 
+	<link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
 	<link href="{% static 'css/tooplate-clean-work.css' %}" rel="stylesheet">
 
 </head>
+
 <body>
-	
-	<div class="limiter" >
-		<div class="container-login100" style="background-color:#F4B4B7;"> 
+
+	<div class="limiter">
+		<div class="container-login100" style="background-color:#F4B4B7;">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" action="{% url 'cadastro' %}" method="POST">
 					<span class="login100-form-title p-b-49">
-						Login
+						Cadastre-se
 					</span>
-					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is required">
-						<span class="label-input100">Userário</span>
-						<input class="input100" type="text" name="username" placeholder="Digite seu usuário">
-						<span class="focus-input100" data-symbol="&#xf206;"></span>
+					{% for message in messages %}
+   						<div class="alert alert-primary" role="alert">
+       						 <p id="messages">{{message}}</p>
+    					</div>
+   					 {% endfor %}
+					{% csrf_token %}
+					<div>
+						{% for field in form.visible_fields %}
+						<div class="wrap-input100 validate-input">
+							<label for="{{ field.id_for_label }}"><span class="label-input100"></span>{{field.label}}</span></label>
+							{{ field }}
+						</div>
+						
+						{% endfor %}
+
+
+
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<span class="label-input100">Senha</span>
-						<input class="input100" type="password" name="pass" placeholder="Digite sua senha">
-						<span class="focus-input100" data-symbol="&#xf190;"></span>
-					</div>
-					
 					<div class="text-right p-t-8 p-b-31">
-						<a href="#">
-							Esqueceu sua senha?
+						<a href="{% url 'login' %}">
+							Voltar ao Login
 						</a>
 					</div>
 					<li class="nav-item">
-						<a class="nav-link custom-btn  custom-btn-bg-white-login btn">Login</a>
+						<a><button type="submit" class="nav-link custom-btn  custom-btn-bg-white-login btn">Cadastrar</button></a>
 					</li>
+					
 
-					<div class="flex-col-c p-t-155">
-						<a href="#" class="txt2">
-							Registrar
-						</a>
-					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	
+
 
 	<div id="dropDownSelect1"></div>
-	
-  
+
+
 	<script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
-  
+
 	<script src="{% static 'vendor/animsition/js/animsition.min.js' %}"></script>
-  
+
 	<script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
 
 	<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
-  
+
 	<script src="{% static 'vendor/select2/select2.min.js' %}"></script>
-  
+
 	<script src="{% static 'vendor/daterangepicker/moment.min.js' %}"></script>
 
 	<script src="{% static 'vendor/daterangepicker/daterangepicker.js' %}"></script>
-  
+
 	<script src="{% static 'vendor/countdowntime/countdowntime.js' %}"></script>
-  
+
 	<script src="{% static 'js/medium.js' %}"></script>
 
 </body>
+
 </html>

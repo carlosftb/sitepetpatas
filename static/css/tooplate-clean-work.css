@@ -26,6 +26,7 @@ https://www.tooplate.com/view/2132-clean-work
   --secondary-color:              #F4B4B7;
   --section-bg-color:             #f0f8ff;
   --custom-btn-bg-color:          #F4B4B7;
+  --custom-btn-bg-color-2:        #F4B4B7;
   --custom-btn-bg-hover-color:    #FD54AC;
   --dark-color:                   #000000;
   --p-color:                      #717275;
@@ -610,6 +611,13 @@ strong {
   color: var(--custom-btn-bg-color);
 }
 
+.custom-border-btn-2 {
+  background: transparent;
+  border: 2px solid var(--custom-btn-bg-color-2);
+  color: var(--white-color);
+}
+
+
 .navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
 .custom-border-btn:hover {
   background: var(--custom-btn-bg-hover-color);
@@ -622,6 +630,10 @@ strong {
   color: var(--primary-color);
 }
 
+.custom-btn-bg-white-login {
+  border-color: var(--secondary-color);
+  color: var(--primary-color);
+}
 
 /*---------------------------------------
   NAVIGATION              
@@ -1458,8 +1470,8 @@ color: var(--primary-color)!important;
   display: block;
   margin-right: 10px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   line-height: 36px;
 }
 
@@ -1503,6 +1515,17 @@ color: var(--primary-color)!important;
 
 .button--skoll:hover::before {
   transform: translate3d(0,100%,0);
+}
+
+.marker {
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/marcador.png');
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
 }
 
 

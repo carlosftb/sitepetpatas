@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>PetPatas Banho e tosa</title>
+        <title>&#128054; PetPatas Banho e tosa</title>
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,12 +23,16 @@
 
         <link href="{% static 'css/tooplate-clean-work.css' %}" rel="stylesheet">
 
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+        
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+
     </head>
     
     <body>
-        {% include 'petpatas/partials/_header.html' %}
+        {% include 'partials/_header.html' %}
         {% block content %} {% endblock %}
-        {% include 'petpatas/partials/_footer.html' %}
+        {% include 'partials/_footer.html' %}
     </body>
 
 </html>
