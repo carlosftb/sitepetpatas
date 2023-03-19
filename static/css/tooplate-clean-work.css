@@ -911,7 +911,6 @@ strong {
 }
 
 .banner-about-section {
-  background-image: url('../images/petpatas.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1111,7 +1110,6 @@ strong {
   TESTIMONIAL              
 -----------------------------------------*/
 .testimonial-section {
-  background-image: url('../images/coffe-shop-with-wooden-walls-unfocused.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1470,8 +1468,8 @@ color: var(--primary-color)!important;
   display: block;
   margin-right: 10px;
   text-align: center;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   line-height: 36px;
 }
 
